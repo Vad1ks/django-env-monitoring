@@ -1,0 +1,222 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+input{
+
+}
+.not-displayed{
+    display: none;
+}
+
+#create-object-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background: #4ac1f7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: 999;
+}
+.data-input{
+    margin: 1px;
+}
+#address{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+#create-object-button{
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+}
+
+#create-chart-button{
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+}
+#close-chart-button{
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+}
+
+.button-container > button{
+    padding:10px;
+    margin: 8px;
+    border:none;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+#closeButton{
+    background-color: #862036;
+    color:#fff;
+}
+#submitButton{
+    background-color: #318d31;
+    color:#fff;
+}
+
+#map-container{
+    border: 2px solid;
+    width: 99%;
+    height: 57em;
+    display: flex;
+    justify-content: center;
+}
+#map{
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+}
+
+#title{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#objectData{
+    border: 10px solid darkcyan;
+    border-radius: 16px;
+    padding: 1em;
+}
+#tabs-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px
+}
+#tabs-content-container{
+    height: 150px;
+}
+.tab{
+    text-align: center;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    background: #b00098;
+    color: #ffffff;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.tab:hover{
+    background: #ecade4;
+}
+
+.tab.active{
+    background: #5e0051
+}
+
+#integralScore{
+    border: 3px solid blue;
+    background: aquamarine;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tabContent {
+    width: auto;
+    height: 75%;
+    overflow-y: auto;
+    padding: 20px;
+    border: 1px solid #b00098;
+    border-radius: 10px;
+    display: none;
+}
+#content-placeholder{
+    width: auto;
+    height: 75%;
+    padding: 20px;
+    border: 1px solid #b00098;
+    border-radius: 10px;
+}
+
+#filter-container{
+    display: flex;
+    border: 1px solid;
+    background-color: #5BC5FF;
+    border-radius: 10px;
+    flex-direction: column;
+    position: relative;
+    z-index: 999;
+    float: right;
+    padding: 5px;
+    width: 20%;
+}
+#filter-container-title{
+    text-align: center;
+    font-weight: bold;
+}
+.system-filter{
+    border: 2px solid;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    padding: 1px;
+    margin: 5px;
+    background: snow;
+    cursor: pointer;
+}
+.system-filter.active{
+    background: #5285d2;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+#chart-container{
+    overflow: unset;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b00098;
+  border-radius: 10px;
+}

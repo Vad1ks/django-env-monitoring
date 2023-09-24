@@ -1,7 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div id="map-container">
+    <div id="map"></div>
+            <div id="filter-container">
+            <div id="filter-container-title">Фільтри:</div>
+        </div>
+        <div id="create-object-form" class="not-displayed" style="display:none">
+            <div id="filter-container-title" class="data-input">Введіть дані про об'єкт:</div>
+            <input type="text" id="title-input" minlength="6" placeholder="Назва об'єкту">
+        </div>
+</div>
 
-Hello
+{{ ecoObjects|json_script:"ecoObjects_json"}}
+{{systems_fields|json_script:"systems_fields_json"}}
+{{integral_scores|json_script:"integral_scores_json"}}
+
+<script src="../static/index.js"></script>
 
 {% endblock %}
